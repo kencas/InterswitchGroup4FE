@@ -37,7 +37,7 @@ const Product = ({addToCart}) =>{
       )
   })
   return(
-    <section class="product_section layout_padding">
+    <section class="product_section layout_padding mt-5">
     <div class="container">
       <div class="heading_container heading_center">
         <h2>

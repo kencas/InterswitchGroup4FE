@@ -39,7 +39,7 @@ const Landing = ({addToCart}) =>{
     })
     return(
     <Fragment>
-    <section className="slider_section ">
+    <section  className="slider_section mt-5" >
       <div id="customCarousel1" className="carousel slide" data-ride="carousel">
         <div className="carousel-inner">
           <div className="carousel-item active">

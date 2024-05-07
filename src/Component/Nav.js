@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Nav = ({cartLength}) =>{
+const Nav = ({totalPrice}) =>{
     return(
-    <header className="header_section" style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 1000 }}>
+    <header className="header_section"  style={{ position:"fixed", top: 0, left: 0, right: 0, zIndex: 1000 }}>
       <div className="header_top">
         <div className="container-fluid">
           <div className="top_nav_container">
@@ -23,7 +23,7 @@ const Nav = ({cartLength}) =>{
               <Link to={"/checkout"} className="cart-link">
                 <i className="fa fa-shopping-cart" aria-hidden="true"></i>
                 <span>
-                  Cart ({cartLength})
+                  Cart (${totalPrice})
                 </span>
               </Link>
             </div>

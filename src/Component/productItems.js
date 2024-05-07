@@ -21,12 +21,12 @@ export const products = [{
 {
     productImg : p3,
     name: "Drone",
-    price: 300,  
+    price: 150,  
 },
 {
     productImg : p4,
     name: "Speaker",
-    price: 300,  
+    price: 100,  
 },
 {
     productImg : p5,
@@ -36,21 +36,21 @@ export const products = [{
 {
     productImg : p6,
     name: "Game Pad",
-    price: 300,  
+    price: 250,  
 },
 {
     productImg : p7,
     name: "Drone Camera",
-    price: 300,  
+    price: 450,  
 },
 {
     productImg : p8,
     name: "Digital Camera",
-    price: 300,  
+    price: 170,  
 },
 {
     productImg : p9,
     name: "CCTV",
-    price: 300,  
+    price: 120,  
 }
 ]

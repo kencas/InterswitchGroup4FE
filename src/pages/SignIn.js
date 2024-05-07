@@ -17,9 +17,9 @@ const SignIn = () =>{
 
         <button type="submit" className="add_cart_btn mt-5">SUBMIT</button>
         </form>
-        <a>Don't have an account? 
-        <span onClick={()=> {navigate("/signup") }}></span>
-        </a> 
+        <span>Don't have an account? 
+        <button onClick={()=> {navigate("/signup") }}>Sign up</button>
+        </span> 
         </div>
     )
 

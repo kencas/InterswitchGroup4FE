@@ -21,10 +21,16 @@ function App() {
       setCart([...cart, product ])
       setCartLength(cartLength + 1)
   }
+
+  const cartTotalPrice = () =>{
+      return cart.reduce((total, item) => total + item.price, 0)
+  }
+
+
   console.log(cart)
   return (
     <BrowserRouter>
-      <Nav cartLength={cartLength}/>
+      <Nav cartLength={cartLength} totalPrice={cartTotalPrice()}/>
       <Routes>
        
         <Route path='/signin' element={<SignIn/>}/>
@@ -32,7 +38,7 @@ function App() {
         
         <Route path='/' element={<Landing addToCart={addToCart} />} />
         <Route path='/products' element={<Product addToCart={addToCart} />} />
-        <Route path='/checkout' element={<Checkout cart={cart}/>}/>
+        <Route path='/checkout' element={<Checkout cart={cart} cartLength={cartLength} totalPrice={cartTotalPrice()}/>}/>
       </Routes>
     </BrowserRouter>
      
